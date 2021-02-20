@@ -1,14 +1,24 @@
-A=[1,2,3]
-B=A
-A=[3,4,5]
+import time
 
+start = time.time()
 
-A=[1,2,3]
-B=A[:]
-A[0]=3
-A[1]=4
-A[2]=5
+X=[1,1,3,3,2,3,2,2]
+X=set(X)
+X=list(X)
+# print(X)
 
-a=-1
+A=[0,0,1]
+a,b,c=A
+print(a,b,c)
+l=0
+r=len(A)
+while l != r:
+    m=(l+r)//2
+    if A[m]==1:
+        r=m
+    else:
+        l=m+1
+print(l)
+print(r)
+# print("time :", time.time() - start)  #
 
-print(type((0,0,0))==tuple)
