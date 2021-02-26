@@ -21,4 +21,3 @@ while l != r:
 print(l)
 print(r)
 # print("time :", time.time() - start)  #
-
