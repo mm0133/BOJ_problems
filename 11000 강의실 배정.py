@@ -6,6 +6,3 @@ for i in A:
  if i[1]:c+=1;v=max(c,v)
  else:c-=1
 print(v)
-
-
-
