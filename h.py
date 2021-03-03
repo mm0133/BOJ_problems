@@ -7,9 +7,8 @@ X=set(X)
 X=list(X)
 # print(X)
 
-A=[0,0,1]
-a,b,c=A
-print(a,b,c)
+A=[0,0,0]
+
 l=0
 r=len(A)
 while l != r:
