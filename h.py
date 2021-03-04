@@ -6,7 +6,9 @@ X=[1,1,3,3,2,3,2,2]
 X=set(X)
 X=list(X)
 # print(X)
-
+A=[(1,2),(1,4),(1,3),(2,2)]
+A.sort(key=lambda x: x[0])
+print(A)
 A=[0,0,0]
 
 l=0
