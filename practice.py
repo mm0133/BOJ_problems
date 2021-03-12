@@ -1,7 +1,29 @@
-N=int(input());A=[];v=0;c=0;
-for i in range(N):a,b=map(int, input().split());A.extend([(a,1),(b,0)])
-A.sort()
-for i in A:
- if i[1]:c+=1;v=max(c,v)
- else:c-=1
-print(v)
+je=[0,1,1,2,2,2,2,2,3,4,5]
+
+je.reverse()
+print(je)
+def find(x):
+ l=0
+ r=len(je)
+ while l < r:
+  m = (l + r) // 2
+  if je[m] < x:
+   r = m
+  else:
+   l = m + 1
+ return l
+
+
+print(find(2))
+
+
+def find(x):
+ l = 0
+ r = K
+ while l < r:
+  m = (l + r) // 2
+  if bp[m] < x:
+   r = m
+  else:
+   l = m + 1
+ return l
